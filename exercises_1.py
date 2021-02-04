@@ -1,3 +1,5 @@
+import random
+
 # =============================================================================
 # # Exercise 1
 # 
@@ -68,29 +70,100 @@
 # print(divisors)
 # =============================================================================
 
+# =============================================================================
+# # Exercise 5: https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html
+# 
+# ## First Approach
+# print("First approach:\n")
+# 
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+# common_elements = list()
+# 
+# # Get unique values
+# a_unique = set(a)
+# b_unique = set(b)
+# 
+# for i in a_unique:
+#     for j in b_unique:
+#         if i == j:
+#             common_elements.append(j)
+# 
+# print(f"List a is: {a_unique}")
+# print(f"List b is: {b_unique}")
+# print(f"List of common elements is: {common_elements}\n")
+# 
+# ## Second approach: Random lists
+# print("Second approach:")
+# 
+# a2 = list()
+# b2 = list()
+# common_elements2 = list()
+# 
+# # Filling first list: 15 elements
+# for element in range(0,15):
+#     n = random.randint(0, 50)
+#     a2.append(n)
+# 
+# # Filling second list: 10 elements
+# for element in range(0,10):
+#     n = random.randint(0, 50)
+#     b2.append(n)
+# 
+# # Get unique values
+# a2_unique = set(a2)
+# b2_unique = set(b2)
+# 
+# for i in a2_unique:
+#     for j in b2_unique:
+#         if i == j:
+#             common_elements2.append(j)
+# 
+# # Sort final list
+# common_elements2.sort()
+# 
+# print(f"List a is: {a2_unique}")
+# print(f"List b is: {b2_unique}")
+# print(f"List of common elements is: {common_elements2}")
+# =============================================================================
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# =============================================================================
+# # Exercise 6: https://www.practicepython.org/exercise/2014/03/12/06-string-lists.html
+# 
+# string = input("Enter a string: ")
+# 
+# #Make sure everything is lowercase
+# string = string.lower()
+# 
+# 
+# # Delete spaces
+# if ' ' in string:
+#     string = string.replace(' ','')
+# 
+# 
+# #palindrome = "".join(list(reversed(string)))
+# # Instead of reverse we can use: palindrome = string[::-1]
+# # Source: https://stackoverflow.com/questions/31633635/what-is-the-meaning-of-inta-1-in-python
+# 
+# palindrome = string[::-1]
+# 
+# if string == palindrome: print("Palindrome")
+# else: print("Not palindrome")
+# 
+# 
+# # Using functions:
+#     
+# def palindrome(word):
+#     if ' ' in word:
+#         word = word.replace(' ', '')
+#     palindrome = reversed(word) #word[::-1]
+#     for letter, rev_letter in zip(word, palindrome):
+#         if letter != rev_letter:
+#             return 'Not Palindrome'
+#     return 'Palindrome'
+# 
+# word = input("Input a string: ")
+# result = palindrome(word)
+# 
+# print(result)
+# =============================================================================
