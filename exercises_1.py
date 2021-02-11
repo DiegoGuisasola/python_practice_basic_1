@@ -294,11 +294,51 @@ import sys
 # print(f"List of common elements is: {common_elements2}")
 # =============================================================================
 
+# =============================================================================
+# # Playing with strings and lists lol
+# # print(dir(''))
+# def reverse_string(string):
+#     return string [::-1]
+# 
+# 
+# name = 'Diego'
+# list_to_reverse = [1, 2, 3, 4, 5]
+# 
+# # name_reversed = reverse_string(name)
+# print(f"List not reversed: {list_to_reverse}")
+# print(f"List reversed 1: {list_to_reverse [::-1]}") # Most straight forward method: https://stackoverflow.com/questions/4280691/list-reverse-does-not-return-list
+# print(f"List reversed 1: {list(reversed(list_to_reverse))}") # need to convert the list iterator to a list
+# 
+# # Inplace reverse:
+# list_to_reverse.reverse()
+# print(f"List reversed 3: {list_to_reverse}")
+# 
+# # Reverses name as a list
+# reversed_name = name [::-1]
+# print(reversed_name)
+# print("\n")
+# print(list_to_reverse.reverse())
+# 
+# for letter in name [::-1].lower():
+#     # print(letter)
+# =============================================================================
 
-
-
-
-
+# =============================================================================
+# # Playing with date times!
+# from datetime import datetime
+# 
+# current_time = datetime.now()
+# current_timestamp = current_time.timestamp()
+# convert_to_datetime = datetime.fromtimestamp(current_timestamp)
+# utc_time = datetime.utcfromtimestamp(current_timestamp)
+# 
+# print(f"Current datetime: {current_time}")
+# print(f"Current timestamp: {current_timestamp}")
+# print(f"Convert timestamp to datetime: {convert_to_datetime}")
+# print(f"Current UTC datetime: {utc_time}")
+# 
+# print(type(current_time))
+# =============================================================================
 
 
 
