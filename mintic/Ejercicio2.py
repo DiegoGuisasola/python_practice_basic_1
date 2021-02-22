@@ -18,7 +18,7 @@ def altura_promedio(n: int):
     print(f'Estaturas: {estaturas}')
     
     # Imprime el valor promedio
-    valor_promedio = sum(estaturas) / float(len(estaturas))
+    valor_promedio = sum(estaturas) / len(estaturas)
     print(valor_promedio)
     
     # Adicionalmente: Cálculo del promedio usando el paquete statistics
